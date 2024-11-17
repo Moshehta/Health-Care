@@ -1,0 +1,160 @@
+.contact-us .row{
+    margin-top: 20px;
+    justify-content: space-evenly !important;
+    height: auto !important;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -10, 0, 20, 1) !important;
+    border: 0px solid #fff  !important;
+    border-radius: 20px !important;
+}
+.contact-us form{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 15px;
+}
+form input,
+form textarea,
+form select{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 17px;
+    outline: none;
+}
+form input:hover,
+form textarea:hover,
+form select:hover{
+    border:1px solid var(--btn-color);
+    transition: 0.2s ease-in-out;
+}
+.contact-us .form-control{
+    border: none;
+}
+form textarea{
+    height: 150px;
+}
+.contact-us form button{
+    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--orange-color) !important;
+    color: #fff;
+    border: 1px solid var(--orange-color) !important;
+    border-radius: 8px !important;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.3s ease a;
+}
+.contact-us form button:hover{
+    opacity: 0.8;
+}
+.side{
+    background-image: url('../../../Assets/contact-image-overlay.jpg');
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.side .overlay{
+    background-color: #5256BF;
+    opacity: 0.7;
+    padding:35px 15px;
+    height: auto;
+    border-radius: 5px;
+    border-radius: 8px;
+}
+.side .overlay h3{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.side .overlay li{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin:15px 5px 28px 0px;
+    width: auto;
+}
+.side .overlay ul li{
+    display: inline;
+    margin-right: 15px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #1e24c7;
+    cursor: pointer;
+    transition: 0.8s ease all;
+}
+.side .overlay ul li:hover{
+    background-color: var(--orange-color);
+}
+.side .overlay hr{
+    color: #fff;
+    width: 70%;
+}
+/* //////////////////////////////////// */
+.contact-us2{
+    margin-top: 20px;
+}
+.contact-us2 .row{
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact-us2 .cont{
+    width: 90%;
+    height: auto;
+    border: 1px solid var(--orange-color);
+    background-color: #fff;
+    margin-left: 5%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.contact-us2 .cont .contimg{
+    width: 60px;
+    height: 60px;
+    margin:20px 30px;
+}
+.contact-us2 .cont h3{
+    margin:15px 30px;
+    color: var(--main-color);
+}
+.contact-us2 .cont p{
+    margin:15px 30px;
+    color: gray;
+    font-weight: bold; 
+    letter-spacing: 1.5px;
+}
+.contact-us2 .cont3 .contimg{
+    margin: 30px 30px 12px 30px;
+}
+.contact-us2 .cont3 p{
+    margin-bottom: 30px;
+}
+.contact-us2 .cont:hover .contimg{
+    animation: img-animation 0.1s  4 linear;
+    transition: 0.3s ease all;
+} 
+@keyframes img-animation{
+    0%{
+        transform: translateX(3px);
+    }
+    50%{
+        transform: translateX(-3px);
+    }
+    100%{
+        transform: translateX(-3px);
+    }
+}

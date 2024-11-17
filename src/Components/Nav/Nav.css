@@ -1,0 +1,121 @@
+nav{
+    width: 100%;
+    height: auto;
+    border-radius: 0px !important;
+    position: fixed !important;
+    top:0 !important;
+    z-index: 10 !important;
+    background-image: url('../../Assets/navbackground.jpg');
+}
+nav .navbar-nav {
+    margin-top: 12px;
+}
+.imgg{
+    margin-left: -50px !important;
+}
+.navv{
+    display: flex;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+nav .navbar-nav a{
+    color: var(--main-color);
+    margin-left: 20px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* margin-right: 10px; */
+    font-size: 17px;
+    transition: 0.3s ease all;
+}
+nav .navbar-nav a:hover,
+nav .navbar-nav a:focus
+{
+    color: var(--orange-color);
+}
+nav .navbar-nav .active{
+    color: var(--main-color) !important;
+    margin-top: 8px;
+}
+nav .navbar-nav .active:hover{
+    color: var(--orange-color)  !important;
+}
+nav .navbar-nav button{
+    border: 1px solid var(--btn-color);
+    background-color: var(--btn-color);
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: -10px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease all;
+}
+nav .navbar-nav button:hover{
+    background-color: rgb(0, 0, 166) !important;
+}
+nav .navbar-nav button span{
+    background-color: #fff;
+    color: var(--btn-color);
+    width: 40px;
+    border-radius: 4px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+}
+nav .navbar-nav .dropdown-menu{
+    position: static;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    background-color: #fff;
+}
+nav .navbar-nav .dropdown-item{
+    width: 100%;
+    height: 30px !important;
+    color: #444;
+    position: relative;
+    font-size: 14px;
+    transition: 0.5s ease all !important;
+}
+nav .navbar-nav .dropdown-item:hover{
+    text-decoration: underline !important;
+}
+nav .navbar-nav .dropdown-item:hover{
+    color: var(--btn-color);
+}
+@media only screen and(max-width:992px) {
+    nav .navbar-nav .dropdown-menu{
+        width: 100% ;
+    }
+}
+nav .search{
+    font-size: 30px;
+    margin-top: 7px;
+}
+@media (max-width:992px){
+    nav .navbar-nav,
+    nav .navbar-nav .dropdown-menu
+    {
+        background-color: #333 !important;
+    }
+    nav .navbar-nav a,
+    nav .navbar-nav .active{
+        color: #fff !important;
+        margin: 5px 20px;
+    }
+    nav .navbar-nav .dropdown-item{
+        color:#d1cccc !important;
+    }
+    nav .navbar-nav .dropdown-item:hover{
+        color: var(--btn-color) !important;
+        background-color: #333 !important;
+    }
+    nav .navbar-nav a:hover{
+    color: var(--orange-color)  !important;
+    }   
+}

@@ -1,0 +1,140 @@
+header{
+    margin-top: 0px !important;
+    background-color: #F7F7FF;
+    z-index: -5;
+    position: relative;
+}
+header .row{
+    width: 95% !important;
+    margin: 50px 0px;
+}
+header .row .first-sec{
+    margin-top: 50px;
+    position: relative;
+}
+header .icon1{
+    width: 50px;
+    height: 50px;
+}
+header .row h5{
+    color: var(--btn-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0px 10px 0px;
+    background-image: url('../../../Assets/h5background.png');
+    background-position: bottom;
+}
+header h2{
+    color: var(--main-color);
+    font-size: 50px;
+    margin: 30px 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+header button{
+    background-color:var(--orange-color) !important;
+    width: 200px;
+    height: 60px;
+    border: 1px solid var(--orange-color) !important;
+    border-radius: 10px !important;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+header button:hover{
+    opacity: 0.7 !important;
+}
+header button a{
+    color: #fff;
+    font-size: 17px;
+    transition: 0.2s ease;
+}
+header .img1{
+    margin-left: 100px;
+    max-width: 100%;
+    width: 430px;
+    height: auto;
+    animation: img-move 2s infinite alternate;
+    transition: 0.3s ease all;
+    z-index: -1;
+}
+header .header-box{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes img-move{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+header .iconimg{
+    position: absolute;
+    font-size: 80px;
+    height: 100px;
+    top: 55px;
+    left: 55px;
+    animation: svg-move 2s infinite alternate;
+    transition: 0.3s ease all;
+}
+header .iconimg2{
+    position: absolute;
+    font-size: 100px;
+    height: 80px;
+    top:100%;
+    left: 100%;
+}
+header .iconimg3{
+    position: absolute;
+    font-size: 100px;
+    height: 80px;
+    top:85%;
+    left: -20%;
+    animation: svg-move2 2s infinite alternate;
+    transition: 0.3s ease all;
+}
+header .iconimg5{
+    position: absolute;
+    font-size: 100px;
+    height: 50px;
+    top:85%;
+    left: 75%;
+    animation: iconimg5-move 2s infinite alternate;
+    transition: 0.3s ease all;
+    z-index: -3;
+}
+@keyframes svg-move{
+    0% {
+        transform: translateY(0px) rotate(50deg);
+    }
+    100% {
+        transform: translateY(-10px) rotate(50deg);
+    }
+}
+@keyframes svg-move2{
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+@keyframes iconimg5-move{
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+header .background2{
+    margin-top: -130px;
+}
+@media (max-width: 991px) { 
+    .icon1, .iconimg, .iconimg2, .iconimg3, .iconimg5 {
+        display: none;
+    }
+}
